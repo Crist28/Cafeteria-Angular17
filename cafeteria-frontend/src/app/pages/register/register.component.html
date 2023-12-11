@@ -1,0 +1,45 @@
+<app-headers />
+<div class="container">
+    <div class="logo">Registro</div>
+    <div class="login-item">
+      <form (ngSubmit)="onSubmit()" class="form form-login">
+        <div class="form-field">
+          <label class="user" for="login-username"><span class="hidden">Nombre</span></label>
+          <input id="login-username" type="text" class="form-input" placeholder="Nombre" [(ngModel)]="nombre" name="nombre" required>
+        </div>
+
+        <div class="form-field">
+          <label class="user" for="login-username"><span class="hidden">Apellido</span></label>
+          <input id="login-username" type="text" class="form-input" placeholder="Apellido" [(ngModel)]="apellidos" name="apellidos" required>
+        </div>
+
+        <div class="form-field">
+          <label class="user" for="login-username"><span class="hidden">Email</span></label>
+          <input id="login-username" type="text" class="form-input" placeholder="Correo" [(ngModel)]="email" name="email" required>
+        </div>
+
+        <div class="form-field">
+          <label class="lock" for="login-password"><span class="hidden">Password</span></label>
+          <input id="login-password" type="password" class="form-input" placeholder="Contraseña" [(ngModel)]="password" name="password" required>
+        </div>
+
+        <div class="form-field">
+          <label class="user" for="login-username"><span class="hidden">(Opcional)</span></label>
+          <input id="login-username" type="text" class="form-input" placeholder="Telefono" [(ngModel)]="telefono" name="telefonos" required>
+        </div>
+
+        <div class="form-field">
+          <label class="user" for="login-username"><span class="hidden">(Opcional)</span></label>
+          <input id="login-username" type="text" class="form-input" placeholder="N° Documento" [(ngModel)]="dni" name="dni" required>
+        </div>
+
+        <div class="form-field">
+          <input type="submit" value="Registrarse">
+        </div>
+        <div class="form-field">
+            <h6>Ya tienes cuenta? <a href="login">Iniciar Sesión</a></h6>
+          </div>
+      </form>
+    </div>
+</div>
+<app-footer></app-footer>

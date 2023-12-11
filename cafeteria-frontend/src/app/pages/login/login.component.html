@@ -1,0 +1,43 @@
+<app-headers></app-headers>
+
+<div class="container">
+  <div class="logo">Iniciar sesión</div>
+  <div class="login-item">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="form form-login">
+      <div class="form-field">
+        <label class="user" for="login-username">
+          <span class="hidden">Username</span>
+        </label>
+        <input
+          id="login-username"
+          type="text"
+          class="form-input"
+          placeholder="Correo"
+          formControlName="email"
+        />
+      </div>
+
+      <div class="form-field">
+        <label class="lock" for="login-password">
+          <span class="hidden">Password</span>
+        </label>
+        <input
+          id="login-password"
+          type="password"
+          class="form-input"
+          placeholder="Contraseña"
+          formControlName="password"
+        />
+      </div>
+
+      <div class="form-field">
+        <input type="submit" value="Iniciar Sesión" />
+      </div>
+      <div class="form-field">
+        <h6>¿No tienes cuenta? <a href="register">Registrarse</a></h6>
+      </div>
+    </form>
+  </div>
+</div>
+
+<app-footer></app-footer>
